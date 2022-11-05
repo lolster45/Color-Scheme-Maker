@@ -2,8 +2,6 @@ document.getElementById("btn").addEventListener("click", () => {
    let colorHex = document.querySelector("input").value;
    let selectOption = document.getElementById("select-menu").value
    
-   
-   
    fetch(`https://www.thecolorapi.com/scheme?hex=${colorHex.substring(1)}&mode=${selectOption}&count=6`)
     .then(res => res.json())
     .then(data => {
